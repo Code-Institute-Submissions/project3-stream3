@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CoffeeDaily</title>
+    
+    {% block head_style %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+    {% endblock head_style %}
+    
+    {% block head_js %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    {% endblock head_js %}
+    
+</head>
+<body>
+    
+<div class="container">
+
+<!-- ========== header ========== -->
+<section id="header">
+  <div id="header-row" class="row">
+    <hr>
+    <div class="col-md-12 text-center pt-5">
+      <h1 id="brand-title" class="pt-5">DailyCoffee</h1>
+    </div>
+    <div class="col-md-12 text-center">
+      <img class="pb-3" src="{% static 'home/images/coffee-logo.png' %}" alt="coffee logo" width="129px" height="131px">
+    </div>
+    <!-- secondary menu -->
+    <div class="col-md-12 text-right">
+      <ul id="secondary-menu">
+        <li><a href="#"><i class="fa fa-user"></i> PROFILE</a></li>
+        <li><a href="#"><i class="fa fa-user-plus"></i> REGISTER</a></li>
+        <li><a href="#"><i class="fa fa-sign-in"></i> LOGIN</a></li>
+        <li><a href="#"><i class="fa fa-sign-out"></i> LOGOUT</a></li>
+        <li><a href="#"><i class="fa fa-shopping-cart"></i> CART</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- ========== end.header ========== -->
+
+<!-- ========== navigation ========== -->
+<section id="navigation">
+  <div id="navigation-row" class="row">
+    <div class="col-md-12 text-center">
+      <hr>
+      <ul>
+        <li><a href="{% url 'listcoffee' %}">SHOP</a></li>
+        <li><a href="{% url 'about' %}">ABOUT</a></li>
+        <li><a href="{% url 'hours' %}">HOURS</a></li>
+        <li><a href="#">TESTIMONIALS</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+      <hr>
+    </div>
+  </div>
+</section>
+<!-- ========== end.navigation ========== -->
+
+{% block content %} {% endblock %}
+
+<!-- ========== footer ========== -->
+<section id="footer">
+    <div id="footer-row mt-5" class="row">
+        <div class="col-md-12 text-center">
+            <hr>
+            <p id="footer-information">DailyCoffee | footer information</p>
+            <hr>
+        </div>
+    </div>
+</section>
+<!-- ========== end.footer ========== -->
+
+</div>
+    
+</body>
+</html>

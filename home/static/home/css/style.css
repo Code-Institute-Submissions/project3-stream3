@@ -1,0 +1,58 @@
+/* CSS custom stylesheet
+Dan Dumitrache */
+
+
+/* HTML elements */
+/* =============================================================== */
+body {
+  background-color: #6E7587;
+  background-image: url("../images/45-degree-fabric-light.png");
+  color: #020731;
+}
+li {
+  display: inline;
+  padding-right: 30px;
+}
+a, a:visited, a:active {
+  color: #020731;
+}
+a:hover {
+  color: #6E7587;
+}
+
+
+/* css classes */
+/* =============================================================== */
+.container {
+  background-color: #AE956D;
+  background-image: url("../images/45-degree-fabric-light.png");
+  box-shadow: 0 0 30px black;
+}
+.card {
+    background-color: #AE956D;
+}
+.read-more {
+    color: #6E7587;
+}
+
+
+/* CSS ids */
+/* =============================================================== */
+#header-row{
+  background-image: url("../images/coffee-beans.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 10px black;
+}
+#brand-title {
+  font-family: 'Dekko', cursive;
+}
+#content-row {
+  box-shadow: 0 0 10px black;
+}
+#secondary-menu li a {
+    color: #806641;
+    font-size: 0.7em;
+}
