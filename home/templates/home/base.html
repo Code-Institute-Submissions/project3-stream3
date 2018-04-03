@@ -36,11 +36,16 @@
     <!-- secondary menu -->
     <div class="col-md-12 text-right">
       <ul id="secondary-menu">
-        <li><a href="#"><i class="fa fa-user"></i> PROFILE</a></li>
-        <li><a href="#"><i class="fa fa-user-plus"></i> REGISTER</a></li>
-        <li><a href="#"><i class="fa fa-sign-in"></i> LOGIN</a></li>
-        <li><a href="#"><i class="fa fa-sign-out"></i> LOGOUT</a></li>
-        <li><a href="#"><i class="fa fa-shopping-cart"></i> CART</a></li>
+        {% if user.is_authenticated %}
+        <li><a href="{% url 'profile' %}"><i class="fa fa-user"></i> PROFILE</a></li>
+        <li><a href="{% url 'logout' %}?next={{ request.path }}"><i class="fa fa-sign-out"></i> LOGOUT</a></li>
+        {%  else %}
+        <li><a href="{% url 'register' %}"><i class="fa fa-user-plus"></i> REGISTER</a></li>
+        <li><a href="{% url 'login' %}?next={{ request.path }}"><i class="fa fa-sign-in"></i> LOGIN</a></li>
+        {% endif %}
+        <li><a href="{% url 'view_cart' %}"><i class="fa fa-shopping-cart"></i> Cart                        
+            <label class="badge badge-light">{{ items_in_cart }}</label></a>
+        </li>
       </ul>
     </div>
   </div>
