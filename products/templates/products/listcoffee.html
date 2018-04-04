@@ -5,164 +5,20 @@
 
 <!-- ========== content ========== -->
 <section id="content">
-    
-    <!--<div class="row">-->
-    <!--{% for product in coffeeproducts %}-->
-    <!--                <div class="col-sm-4 col-lg-4 col-md-4">-->
-    <!--                    <div class="thumbnail">-->
-    <!--                        <img src="{{MEDIA_URL}}{{product.image}}" alt="test image" width="250px">-->
-    <!--                        <div class="caption">-->
-    <!--                            <h4 class="pull-right">€{{product.price}}</h4>-->
-    <!--                            <h4><a href="#">{{product.name}}</a>-->
-    <!--                            </h4>-->
-    <!--                            <p>{{product.description}}</p>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--{% endfor %}-->
-    <!--</div>-->
-    
-    
-    <div id="content-row" class="row">
-        <div class="col-md-12 pt-3 pb-3"><h2>Our Products</h2></div>
-        
-<!-- Card -->
-{% for product in coffeeproducts %}
-<div class="col-md-4">
-    <div class="card mb-3">
-        <img class="card-img-top" src="{{MEDIA_URL}}{{product.image}}" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title"><a href="{% url 'detailcoffee' product.id %}">{{product.name}}</a></h5>
-            <p class="card-text">{{product.description}} <a class="read-more" href="#">... read more</a></p>
-            <p class="card-text"><small class="text-muted">Rating <i class="fa fa-coffee"></i> x </small></p>
-        </div>
-    </div>
-</div>
-{% endfor %}
-        
-        <!-- Card -->
-        <!--<div class="col-md-4">-->
-        <!--    <div class="card mb-3">-->
-        <!--        <img class="card-img-top" src="{% static 'home/images/product-1-coffee-beans.jpeg' %}" alt="Card image cap">-->
-        <!--        <div class="card-body">-->
-        <!--            <h5 class="card-title">Card title</h5>-->
-        <!--            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer <a class="read-more" href="#">... read more</a></p>-->
-        <!--            <p class="card-text"><small class="text-muted">Rating <i class="fa fa-coffee"></i> x </small></p>-->
-        <!--        </div>-->
-        <!--    </div>-->
-        <!--</div>-->
-        <!-- Card -->
-        <!--<div class="col-md-4">-->
-        <!--    <div class="card mb-3">-->
-        <!--        <img class="card-img-top" src="{% static 'home/images/product-2-coffee-beans.jpeg' %}" alt="Card image cap">-->
-        <!--        <div class="card-body">-->
-        <!--            <h5 class="card-title">Card title</h5>-->
-        <!--            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer <a class="read-more" href="#">... read more</a></p>-->
-        <!--            <p class="card-text"><small class="text-muted">Rating <i class="fa fa-coffee"></i> x </small></p>-->
-        <!--        </div>-->
-        <!--    </div>-->
-        <!--</div>-->
-        <!-- Card -->
-        <!--<div class="col-md-4">-->
-        <!--    <div class="card mb-3">-->
-        <!--        <img class="card-img-top" src="{% static 'home/images/product-3-coffee-beans.jpeg' %}" alt="Card image cap">-->
-        <!--        <div class="card-body">-->
-        <!--            <h5 class="card-title">Card title</h5>-->
-        <!--            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer <a class="read-more" href="#">... read more</a></p>-->
-        <!--            <p class="card-text"><small class="text-muted">Rating <i class="fa fa-coffee"></i> x </small></p>-->
-        <!--        </div>-->
-        <!--    </div>-->
-        <!--</div>-->
-        <!-- Card -->
-        <!--<div class="col-md-4">-->
-        <!--    <div class="card mb-3">-->
-        <!--        <img class="card-img-top" src="{% static 'home/images/product-4-coffee-beans.jpeg' %}" alt="Card image cap">-->
-        <!--        <div class="card-body">-->
-        <!--            <h5 class="card-title">Card title</h5>-->
-        <!--            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer <a class="read-more" href="#">... read more</a></p>-->
-        <!--            <p class="card-text"><small class="text-muted">Rating <i class="fa fa-coffee"></i> x </small></p>-->
-        <!--        </div>-->
-        <!--    </div>-->
-        <!--</div>-->
-        <!-- Card -->
-        <!--<div class="col-md-4">-->
-        <!--    <div class="card mb-3">-->
-        <!--        <img class="card-img-top" src="{% static 'home/images/product-5-coffee-beans.jpeg' %}" alt="Card image cap">-->
-        <!--        <div class="card-body">-->
-        <!--            <h5 class="card-title">Card title</h5>-->
-        <!--            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer <a class="read-more" href="#">... read more</a></p>-->
-        <!--            <p class="card-text"><small class="text-muted">Rating <i class="fa fa-coffee"></i> x </small></p>-->
-        <!--        </div>-->
-        <!--    </div>-->
-        <!--</div>-->
-        <!-- Card -->
-        <!--<div class="col-md-4">-->
-        <!--    <div class="card mb-3">-->
-        <!--        <img class="card-img-top" src="{% static 'home/images/product-6-coffee-beans.jpeg' %}" alt="Card image cap">-->
-        <!--        <div class="card-body">-->
-        <!--            <h5 class="card-title">Card title</h5>-->
-        <!--            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer <a class="read-more" href="#">... read more</a></p>-->
-        <!--            <p class="card-text"><small class="text-muted">Rating <i class="fa fa-coffee"></i> x </small></p>-->
-        <!--        </div>-->
-        <!--    </div>-->
-        <!--</div>-->
-        
+    <div class="row shadow-row pt-5">
+        {% for product in coffeeproducts %}
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <img class="card-img-top img-listcoffee" src="{{MEDIA_URL}}{{product.image}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="{% url 'detailcoffee' product.id %}">{{product.name}}</a></h5>
+                        <p class="card-text">{{product.description | truncatechars:100}} <a href="{% url 'detailcoffee' product.id %}">read more</a></p>
+                        <p class="card-text"><small class="text-muted">Rating <i class="fa fa-coffee"></i> x </small></p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
     </div>
 </section>
-    
-<!--        <div class="card-group">-->
-<!--          <div class="card">-->
-<!--            <img class="card-img-top" src="{% static 'home/images/product-1-coffee-beans.jpeg' %}" alt="Card image cap">-->
-<!--            <div class="card-body">-->
-<!--              <h5 class="card-title">Card title</h5>-->
-<!--              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
-<!--              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="card">-->
-<!--            <img class="card-img-top" src="{% static 'home/images/product-2-coffee-beans.jpeg' %}" alt="Card image cap">-->
-<!--            <div class="card-body">-->
-<!--              <h5 class="card-title">Card title</h5>-->
-<!--              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>-->
-<!--              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="card">-->
-<!--            <img class="card-img-top" src="{% static 'home/images/product-3-coffee-beans.jpeg' %}" alt="Card image cap">-->
-<!--            <div class="card-body">-->
-<!--              <h5 class="card-title">Card title</h5>-->
-<!--              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>-->
-<!--              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
-<!--            </div>-->
-<!--          </div>-->
-        <!--</div>-->
-        
-<!--        <div class="card">-->
-<!--            <img class="card-img-top" src="{% static 'home/images/product-4-coffee-beans.jpeg' %}" alt="Card image cap">-->
-<!--            <div class="card-body">-->
-<!--              <h5 class="card-title">Card title</h5>-->
-<!--              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
-<!--              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="card">-->
-<!--            <img class="card-img-top" src="{% static 'home/images/product-5-coffee-beans.jpeg' %}" alt="Card image cap">-->
-<!--            <div class="card-body">-->
-<!--              <h5 class="card-title">Card title</h5>-->
-<!--              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
-<!--              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="card">-->
-<!--            <img class="card-img-top" src="{% static 'home/images/product-6-coffee-beans.jpeg' %}" alt="Card image cap">-->
-<!--            <div class="card-body">-->
-<!--              <h5 class="card-title">Card title</h5>-->
-<!--              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
-<!--              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
 
 {% endblock %}

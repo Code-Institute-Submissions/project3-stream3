@@ -1,37 +1,50 @@
-<table class="table">
-    <thead>
-        <tr>
-            <th></th>    
-            <th>Product</th>    
-            <th>Quantity</th>    
-            <th>Price</th>
-            <th>Total</th> 
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for item in cart_items %}
-        <tr>
-            <td><img width="150" height="75" src="{{MEDIA_URL}}{{item.image}}"/></td>    
-            <td>{{ item.name }}</td>    
-            <td>{{ item.quantity}}</td>    
-            <td>€{{ item.price }}</td>
-            <td>€{{ item.total}}</td>
-            <td><form method="post" action="{% url 'remove_from_cart' item.product_id %}">
-                {% csrf_token %}
-                <input type="submit" class="btn btn-success" value="Remove"/>
-                </form>
-            </td>
-        </tr>
-        {% endfor %}
 
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><strong>Total:</strong></td>
-            <td><strong>€{{total}}</strong></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
+    <hr>
+    <div class="row">
+        <div class="col-md-2">
+            <h4>Image</h4>
+        </div>
+        <div class="col-md-2">
+            <h4>Product</h4>
+        </div>
+        <div class="col-md-2">
+            <h4>Quantity</h4>
+        </div>
+        <div class="col-md-2">
+            <h4>Price</h4>
+        </div>
+        <div class="col-md-2">
+            <h4>Total</h4>
+        </div>
+        <div class="col-md-2">
+            <h4>Options</h4>
+        </div>
+    </div>
+    
+    {% for item in cart_items %}
+    <hr>
+    <div class="row">
+        <div class="col-md-2">
+            <img class="img-fluid" src="{{MEDIA_URL}}{{item.image}}"/>
+        </div>
+        <div class="col-md-2">
+            <p>{{ item.name }}</p>
+        </div>
+        <div class="col-md-2">
+            <p>{{ item.quantity}}</p>
+        </div>
+        <div class="col-md-2">
+            <p>€{{ item.price }}</p>
+        </div>
+        <div class="col-md-2">
+            <p>€{{ item.total}}</p>
+        </div>
+        <div class="col-md-2">
+            <form method="post" action="{% url 'remove_from_cart' item.product_id %}">
+            {% csrf_token %}
+            <input type="submit" id="btn-remove" class="btn" value="Remove"/>
+            </form>
+        </div>
+    </div>
+    <hr>
+    {% endfor %}

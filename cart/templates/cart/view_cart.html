@@ -5,6 +5,6 @@
 
 {% include 'cart/_show_cart.html' %}
 
-<a href="#" class="btn btn-success" role="button">Checkout</a>
+<a href="{% url 'checkout' %}" id="btn-checkout" class="btn" role="button">Checkout</a>
 
 {% endblock content %}

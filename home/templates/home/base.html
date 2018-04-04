@@ -25,30 +25,30 @@
 
 <!-- ========== header ========== -->
 <section id="header">
-  <div id="header-row" class="row">
-    <hr>
-    <div class="col-md-12 text-center pt-5">
-      <h1 id="brand-title" class="pt-5">DailyCoffee</h1>
-    </div>
-    <div class="col-md-12 text-center">
-      <img class="pb-3" src="{% static 'home/images/coffee-logo.png' %}" alt="coffee logo" width="129px" height="131px">
-    </div>
-    <!-- secondary menu -->
-    <div class="col-md-12 text-right">
-      <ul id="secondary-menu">
-        {% if user.is_authenticated %}
-        <li><a href="{% url 'profile' %}"><i class="fa fa-user"></i> PROFILE</a></li>
-        <li><a href="{% url 'logout' %}?next={{ request.path }}"><i class="fa fa-sign-out"></i> LOGOUT</a></li>
-        {%  else %}
-        <li><a href="{% url 'register' %}"><i class="fa fa-user-plus"></i> REGISTER</a></li>
-        <li><a href="{% url 'login' %}?next={{ request.path }}"><i class="fa fa-sign-in"></i> LOGIN</a></li>
-        {% endif %}
-        <li><a href="{% url 'view_cart' %}"><i class="fa fa-shopping-cart"></i> Cart                        
-            <label class="badge badge-light">{{ items_in_cart }}</label></a>
-        </li>
-      </ul>
-    </div>
-  </div>
+      <div id="header-row" class="row">
+        <hr>
+
+        <div class="col-md-12 text-center p-5">
+          <img class="pb-3" src="{% static 'home/images/logo2.png' %}" alt="coffee logo" width="190px" height="150px">
+        </div>
+    
+        <!-- secondary menu -->
+        <div class="col-md-12 text-right">
+          <ul id="secondary-menu">
+            {% if user.is_authenticated %}
+            <li><a href="{% url 'profile' %}"><i class="fa fa-user"></i> PROFILE</a></li>
+            <li><a href="{% url 'logout' %}?next={{ request.path }}"><i class="fa fa-sign-out"></i> LOGOUT</a></li>
+            {%  else %}
+            <li><a href="{% url 'register' %}"><i class="fa fa-user-plus"></i> REGISTER</a></li>
+            <li><a href="{% url 'login' %}?next={{ request.path }}"><i class="fa fa-sign-in"></i> LOGIN</a></li>
+            {% endif %}
+            <li><a href="{% url 'view_cart' %}"><i class="fa fa-shopping-cart"></i> Cart                        
+                <label class="badge badge-light">{{ items_in_cart }}</label></a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
 </section>
 <!-- ========== end.header ========== -->
 
@@ -61,7 +61,6 @@
         <li><a href="{% url 'listcoffee' %}">SHOP</a></li>
         <li><a href="{% url 'about' %}">ABOUT</a></li>
         <li><a href="{% url 'hours' %}">HOURS</a></li>
-        <li><a href="#">TESTIMONIALS</a></li>
         <li><a href="#">CONTACT</a></li>
       </ul>
       <hr>

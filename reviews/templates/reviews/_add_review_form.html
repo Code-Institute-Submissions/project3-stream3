@@ -1,17 +1,15 @@
 {% load bootstrap_tags %}
-<div class="card card-outline-secondary my-4">
-    <div class="card-header">
-      <h2>Write a Review</h2>
+<div class="row p-5">
+    <div class="col-md-12">
+        <h2>Write a Review</h2>
     </div>
-
-    <div class="card-body">
-    <form method="post" action="{% url 'add_a_review' %}">
-        {% csrf_token %}
-        
-        {{ review_form | as_bootstrap }}
-        
-        <input type="hidden" name="product" value="{{product.id}}"/>
-        <input type="submit" class="btn btn-success" value="Leave Review"/>
-    </form>
+    <div class="col-md-12">
+        <form method="post" action="{% url 'add_a_review' %}">
+            {% csrf_token %}
+            {{ review_form | as_bootstrap }}
+            <input type="hidden" name="product" value="{{product.id}}"/>
+            <input type="submit" id="leave-review" class="btn" value="Leave Review"/>
+        </form> 
     </div>
 </div>
+    

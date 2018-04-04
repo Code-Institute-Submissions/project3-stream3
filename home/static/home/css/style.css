@@ -21,6 +21,7 @@ a:hover {
 }
 
 
+
 /* css classes */
 /* =============================================================== */
 .container {
@@ -31,8 +32,11 @@ a:hover {
 .card {
     background-color: #AE956D;
 }
-.read-more {
-    color: #6E7587;
+.img-listcoffee {
+  max-height: 300px;
+}
+.shadow-row {
+  box-shadow: 0 0 10px black;
 }
 
 
@@ -49,10 +53,14 @@ a:hover {
 #brand-title {
   font-family: 'Dekko', cursive;
 }
-#content-row {
-  box-shadow: 0 0 10px black;
-}
 #secondary-menu li a {
     color: #806641;
     font-size: 0.7em;
+}
+#add-to-cart-btn, #leave-review, #btn-checkout, #btn-remove, #btn-create-account, #btn-login {
+  background-color: #806641;
+  color: white;
+}
+#registration-row {
+  padding: 0 150px;
 }

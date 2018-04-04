@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django_forms_bootstrap',
     'cart',
     'reviews',
+    'checkout',
 ]
 
 MIDDLEWARE = [
@@ -130,3 +131,10 @@ STATIC_ROOT = 'static'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = 'media'
+
+STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE_KEY')
+STRIPE_SECRET = os.getenv('STRIPE_SECRET_KEY')
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+SYSTEM_EMAIL = 'development@retrocomputer.com'
