@@ -25,7 +25,7 @@ SECRET_KEY = '256w=kh2=1p$9qz6_nr=d$!#o$)ngd7wfd+6m#prm=gm^79iyx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['project3-ddnro.c9users.io']
+ALLOWED_HOSTS = ['project3-ddnro.c9users.io', 'project3-stream3.herokuapp.com']
 
 
 # Application definition
