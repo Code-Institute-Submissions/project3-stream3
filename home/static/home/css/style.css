@@ -7,14 +7,14 @@ Dan Dumitrache */
 body {
   background-color: #6E7587;
   background-image: url("../images/45-degree-fabric-light.png");
-  color: #020731;
+  color: #806641;
 }
 li {
   display: inline;
   padding-right: 30px;
 }
 a, a:visited, a:active {
-  color: #020731;
+  color: #806641;
 }
 a:hover {
   color: #6E7587;
@@ -57,7 +57,7 @@ a:hover {
     color: #806641;
     font-size: 0.7em;
 }
-#add-to-cart-btn, #leave-review, #btn-checkout, #btn-remove, #btn-create-account, #btn-login {
+#add-to-cart-btn, #leave-review, #btn-checkout, #btn-remove, #btn-create-account, #btn-login, #submit-contact {
   background-color: #806641;
   color: white;
 }

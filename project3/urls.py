@@ -14,6 +14,7 @@ from products import urls as urls_products
 from cart import urls as urls_cart
 from reviews import urls as urls_reviews
 from checkout import urls as urls_checkout
+from contact import urls as urls_contact
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -26,4 +27,5 @@ urlpatterns = [
     url(r'^cart/', include(urls_cart)),
     url(r'^reviews/', include(urls_reviews)),
     url(r'^checkout/', include(urls_checkout)),
+    url(r'^contact/', include(urls_contact)),
 ]

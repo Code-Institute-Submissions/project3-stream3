@@ -1,10 +1,7 @@
 {% extends "home/base.html" %}
 
 {% block content %}
-<h1>Cart</h1>
 
 {% include 'cart/_show_cart.html' %}
-
-<a href="{% url 'checkout' %}" id="btn-checkout" class="btn" role="button">Checkout</a>
 
 {% endblock content %}

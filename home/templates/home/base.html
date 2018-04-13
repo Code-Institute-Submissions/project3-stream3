@@ -29,7 +29,7 @@
         <hr>
 
         <div class="col-md-12 text-center p-5">
-          <img class="pb-3" src="{% static 'home/images/logo2.png' %}" alt="coffee logo" width="190px" height="150px">
+          <img class="pb-3 pt-3" src="{% static 'home/images/logo3.png' %}" alt="coffee logo" width="200px">
         </div>
     
         <!-- secondary menu -->
@@ -57,11 +57,11 @@
   <div id="navigation-row" class="row">
     <div class="col-md-12 text-center">
       <hr>
-      <ul>
+      <ul id="navigation-main">
         <li><a href="{% url 'listcoffee' %}">SHOP</a></li>
         <li><a href="{% url 'about' %}">ABOUT</a></li>
         <li><a href="{% url 'hours' %}">HOURS</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="{% url 'contactform' %}">CONTACT</a></li>
       </ul>
       <hr>
     </div>
@@ -76,7 +76,7 @@
     <div id="footer-row mt-5" class="row">
         <div class="col-md-12 text-center">
             <hr>
-            <p id="footer-information">DailyCoffee | footer information</p>
+            <p id="footer-information">DailyCoffee | Dublin, Ireland</p>
             <hr>
         </div>
     </div>

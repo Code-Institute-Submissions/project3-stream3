@@ -1,9 +1,8 @@
 {% load bootstrap_tags %}
-<div class="row p-5">
-    <div class="col-md-12">
-        <h2>Write a Review</h2>
-    </div>
-    <div class="col-md-12">
+<div class="row p-3">
+    <div class="col-md-8 offset-2">
+        <h4>Write a Review</h4>
+        <hr>
         <form method="post" action="{% url 'add_a_review' %}">
             {% csrf_token %}
             {{ review_form | as_bootstrap }}

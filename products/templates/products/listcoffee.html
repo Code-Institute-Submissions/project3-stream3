@@ -11,9 +11,14 @@
                 <div class="card mb-3">
                     <img class="card-img-top img-listcoffee" src="{{MEDIA_URL}}{{product.image}}" alt="Card image cap">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="{% url 'detailcoffee' product.id %}">{{product.name}}</a></h5>
-                        <p class="card-text">{{product.description | truncatechars:100}} <a href="{% url 'detailcoffee' product.id %}">read more</a></p>
-                        <p class="card-text"><small class="text-muted">Rating <i class="fa fa-coffee"></i> x </small></p>
+                        <h5 class="card-title">
+                            <a href="{% url 'detailcoffee' product.id %}">{{product.name}}</a>
+                            <span class="pl-3">€{{product.price}}</span>
+                        </h5>
+                        <p class="card-text">
+                            {{product.description | truncatechars:100}} 
+                            <a href="{% url 'detailcoffee' product.id %}">read more</a>
+                        </p>
                     </div>
                 </div>
             </div>
