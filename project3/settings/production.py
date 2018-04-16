@@ -19,10 +19,10 @@ STATICFILES_LOCATION = 'static'
 STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, STATICFILES_LOCATION)
 
-# SYSTEM_EMAIL="sales@djangomango.com"
+SYSTEM_EMAIL="sales@djangomango.com"
 
-# EMAIL_USE_TLS = True       
-# EMAIL_HOST = 'smtp.gmail.com'      
-# EMAIL_PORT = 587     
-# EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')     
-# EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+EMAIL_USE_TLS = True       
+EMAIL_HOST = 'smtp.gmail.com'      
+EMAIL_PORT = 587     
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')     
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
