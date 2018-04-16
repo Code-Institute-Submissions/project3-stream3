@@ -1,7 +1,6 @@
 from django.db import models
 from django.db.models import Avg
 
-# Create your models here.
 class Product(models.Model):
     name = models.CharField(max_length=254, default='')
     description = models.TextField()

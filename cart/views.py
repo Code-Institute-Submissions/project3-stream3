@@ -7,7 +7,6 @@ def view_cart(request):
     cart = request.session.get('cart', {})
     context = get_cart_items_and_total(cart)
     return render(request, "cart/view_cart.html", context)
- 
 
 def add_to_cart(request):
     id = request.POST['id']
@@ -19,7 +18,6 @@ def add_to_cart(request):
     request.session['cart'] = cart   
 
     return redirect('listcoffee')
-
 
 def remove_from_cart(request, id):
     cart = request.session.get('cart', {})

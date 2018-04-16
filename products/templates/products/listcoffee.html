@@ -9,7 +9,7 @@
         {% for product in coffeeproducts %}
             <div class="col-md-4">
                 <div class="card mb-3">
-                    <img class="card-img-top img-listcoffee" src="{{MEDIA_URL}}{{product.image}}" alt="Card image cap">
+                    <img class="card-img-top" src="{{MEDIA_URL}}{{product.image}}" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">
                             <a href="{% url 'detailcoffee' product.id %}">{{product.name}}</a>

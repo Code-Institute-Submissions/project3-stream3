@@ -2,8 +2,6 @@ from django.test import TestCase
 from django.urls import resolve
 from reviews.views import add_a_review
 
-# Create your tests here.
-
 class TestContactPage(TestCase):
     
     # def test_add_a_review_url_returns_ok(self):

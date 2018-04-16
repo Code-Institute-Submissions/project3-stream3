@@ -2,8 +2,6 @@ from django.test import TestCase
 from django.urls import resolve
 from products.views import listcoffee, detailcoffee
 
-# Create your tests here.
-
 class TestProductsPage(TestCase):
         
     def test_products_url_returns_ok(self):

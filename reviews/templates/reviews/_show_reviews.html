@@ -1,8 +1,10 @@
 <div class="row p-5">
+  
   <div class="col-md-12">
     <h4>Product Reviews</h4>
     <hr>
   </div>
+  
   <div class="col-md-12">
     {% for review in product.reviews_received.all %}
     <p>{{review.content}}</p>
@@ -11,4 +13,5 @@
     <hr>
     {%endfor%}
   </div>
+  
 </div>

@@ -2,8 +2,6 @@ from django.test import TestCase
 from django.urls import resolve
 from accounts.views import profile, register, login, logout
 
-# Create your tests here.
-
 class TestAccountsPage(TestCase):
     
     # def test_profile_url_returns_ok(self):

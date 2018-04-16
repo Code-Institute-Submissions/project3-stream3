@@ -1,6 +1,4 @@
 from django.db import models
-
-# Create your models here.
 from django.db import models
 from products.models import Product
 
@@ -17,7 +15,6 @@ class Order(models.Model):
 
     def __str__(self):
         return "{0}-{1}-{2}".format(self.id, self.date, self.full_name)
-        
 
 class OrderLineItem(models.Model):
     order = models.ForeignKey(Order, null=False, related_name="line_items")

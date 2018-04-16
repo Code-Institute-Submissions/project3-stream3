@@ -3,7 +3,6 @@ from django.http import HttpResponseForbidden
 from .forms import ReviewForm
 from products.models import Product
 
-# Create your views here.
 def add_a_review(request):
     if not request.user.is_authenticated:
         return HttpResponseForbidden()

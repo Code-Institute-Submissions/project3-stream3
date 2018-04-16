@@ -18,5 +18,4 @@ def get_cart_items_and_total(cart):
             'total': this_total,
         }
         cart_items.append(this_item)
-
     return { 'cart_items': cart_items, 'total': total }

@@ -12,7 +12,6 @@ from .utils import save_order_items, charge_card, send_confirmation_email
 import stripe
 from django.conf import settings
 
-# Create your views here.
 def checkout(request):
     if request.method=="POST":
         order_form = OrderForm(request.POST)    

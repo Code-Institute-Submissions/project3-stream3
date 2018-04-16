@@ -1,9 +1,3 @@
-/* CSS custom stylesheet
-Dan Dumitrache */
-
-
-/* HTML elements */
-/* =============================================================== */
 body {
   background-color: #6E7587;
   background-image: url("../images/45-degree-fabric-light.png");
@@ -20,10 +14,6 @@ a:hover {
   color: #6E7587;
 }
 
-
-
-/* css classes */
-/* =============================================================== */
 .container {
   background-color: #AE956D;
   background-image: url("../images/45-degree-fabric-light.png");
@@ -32,16 +22,10 @@ a:hover {
 .card {
     background-color: #AE956D;
 }
-.img-listcoffee {
-  max-height: 300px;
-}
 .shadow-row {
   box-shadow: 0 0 10px black;
 }
 
-
-/* CSS ids */
-/* =============================================================== */
 #header-row{
   background-image: url("../images/coffee-beans.png");
   background-attachment: fixed;
@@ -50,17 +34,10 @@ a:hover {
   background-size: cover;
   box-shadow: 0 0 10px black;
 }
-#brand-title {
-  font-family: 'Dekko', cursive;
-}
 #secondary-menu li a {
-    color: #806641;
     font-size: 0.9em;
 }
 #add-to-cart-btn, #leave-review, #btn-checkout, #btn-remove, #btn-create-account, #btn-login, #submit-contact, #submit_payment_btn {
   background-color: #806641;
   color: white;
-}
-#registration-row {
-  padding: 0 150px;
 }
