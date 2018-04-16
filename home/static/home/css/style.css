@@ -55,9 +55,9 @@ a:hover {
 }
 #secondary-menu li a {
     color: #806641;
-    font-size: 0.7em;
+    font-size: 0.9em;
 }
-#add-to-cart-btn, #leave-review, #btn-checkout, #btn-remove, #btn-create-account, #btn-login, #submit-contact {
+#add-to-cart-btn, #leave-review, #btn-checkout, #btn-remove, #btn-create-account, #btn-login, #submit-contact, #submit_payment_btn {
   background-color: #806641;
   color: white;
 }
