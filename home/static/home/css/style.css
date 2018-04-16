@@ -20,7 +20,7 @@ a:hover {
   box-shadow: 0 0 30px black;
 }
 .card {
-    background-color: #AE956D;
+  background-color: #AE956D;
 }
 .shadow-row {
   box-shadow: 0 0 10px black;
@@ -35,9 +35,13 @@ a:hover {
   box-shadow: 0 0 10px black;
 }
 #secondary-menu li a {
-    font-size: 0.9em;
+  font-size: 0.9em;
 }
 #add-to-cart-btn, #leave-review, #btn-checkout, #btn-remove, #btn-create-account, #btn-login, #submit-contact, #submit_payment_btn {
   background-color: #806641;
   color: white;
+}
+#map {
+  height: 400px;
+  width: 100%;
 }
