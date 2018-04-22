@@ -3,10 +3,9 @@
 ## Overview
 
 ### General information
-This is Dan Dumitrache's third project for Code Institure bootcamp, Dublin, Ireland January-April 2018. It is a fully functional ecommerce application written in Python and Django as a ramework. 
+This is Dan Dumitrache's third project for Code Institure bootcamp, Dublin, Ireland January-April 2018. It is a fully functional ecommerce application written in Python and Django as a framework. 
 
-Git repository can be seen at (https://github.com/saigonro/project3-stream3)
-Live version can be seen at (https://project3-stream3.herokuapp.com/)
+Git repository can be seen at (https://github.com/saigonro/project3-stream3). Live version can be seen at (https://project3-stream3.herokuapp.com/).
 
 ### Navigation through the website
 The website has two menus, one related to the user account and the shopping cart, and another one for navigating through the website pages.
@@ -19,7 +18,7 @@ This website was created using the following technologies:
 - jQuery (Bootstrap requirement) (https://jquery.com/)
 - PostgreSQL Database (https://www.postgresql.org/)
 - Django (https://www.djangoproject.com/)
-- Pillow | Python Imagin Library
+- Pillow | Python Imaging Library
 - Boto | Python Interface to Amazon Web Services
 - Git & GitHub for version control
 - Wireframes in PDF format created with Balsamiq (https://balsamiq.com/)
@@ -29,8 +28,7 @@ This website was created using the following technologies:
 - See more technologies used for this application in the requirements.txt file
 
 ### Features
-- Responsive (mobile first) layout/graphs
-- Clear delimited sections
+- Responsive (mobile first) layout
 - The data is stored in a PostgreSQL database
 - The project uses Django framework
 - Existing users can login/logout
@@ -42,8 +40,8 @@ This website was created using the following technologies:
 - Google map integration on the contact page shows the exact location of the business
 - Logged in users can review and rate a product
 
-### Features Left to Implement
-- More unittest tests to ensure a higher coverage
+### Remaining Features to be Implemented
+- Additional unittest tests to ensure a higher coverage
 
 ### Testing
 - Tests written in unittest test framework
@@ -56,12 +54,12 @@ To view this website locally you have to download the entire repository on your 
 ### Media and Icons
 The project makes use of images for each product sold through the website. These images were downloaded from the internet. The images were edited to ensure they have the same aspect ratio using Adobe Photoshop CS5 and GIMP Image Manipulation software. All of the images were compressed and saved for web use.
 
-The website's logo has been created by me using Adobe Illustrator CS5 and it can be seen at: (https://github.com/saigonro/project3-stream3/blob/master/home/static/home/images/logo3.png)
+The website's logo has been created by the author of this repository using Adobe Illustrator CS5 and it can be viewed at: (https://github.com/saigonro/project3-stream3/blob/master/home/static/home/images/logo3.png)
 
-### Colors
-The website uses the following color pallette:
+### Colours
+The website uses the following colour pallette:
 - #6E7587 for background of the HTML page and hover links
-- #806641 for text color, links color and buttons background
+- #806641 for text colour, links colour and buttons background
 - #AE956D for background of the `container` and `card` classes 
 
 ### Wireframes
